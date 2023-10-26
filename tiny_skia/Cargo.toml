@@ -12,6 +12,6 @@ anyhow = "1.0.69"
 peniko = { git = "https://github.com/linebender/peniko", rev = "cafdac9a211a0fb2fec5656bd663d1ac770bcc81" }
 swash = "0.1.8"
 floem_renderer = { path = "../renderer" }
-softbuffer = "0.3.1"
+softbuffer = { version = "0.3.1", default-features = false, features = ["x11"] }
 bytemuck = "1.12"
 image = { version = "0.24", features = ["jpeg", "png"] }
